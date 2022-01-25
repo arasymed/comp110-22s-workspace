@@ -98,3 +98,4 @@ else:
                                                             print("1 instance of " + single_character + " found in " + user_word)
                                                         else:
                                                             print("No instances of " + single_character + " found in " + user_word)
+                                                            
