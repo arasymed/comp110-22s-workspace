@@ -2,6 +2,7 @@
 
 __author__ = "730435533"
 
+
 user_word: str = (input("Enter a 5-character word: "))
 user_word_characters: int = (len(user_word))
 if user_word_characters != 5:
@@ -98,4 +99,3 @@ else:
                                                             print("1 instance of " + single_character + " found in " + user_word)
                                                         else:
                                                             print("No instances of " + single_character + " found in " + user_word)
-                                                            
