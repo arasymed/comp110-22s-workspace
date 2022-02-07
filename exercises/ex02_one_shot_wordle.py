@@ -2,6 +2,7 @@
 
 __author__ = "730435533"
 
+
 # Assigning variables
 index_guess: int = 0
 emoji: str = ""
