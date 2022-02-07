@@ -1,4 +1,4 @@
-"""One shot Wordle using concepts from Lessons 9 and 10"""
+"""One shot Wordle using concepts from Lessons 9 and 10."""
 
 __author__ = "730435533"
 
