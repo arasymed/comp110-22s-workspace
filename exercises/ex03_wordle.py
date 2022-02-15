@@ -2,7 +2,7 @@
 
 __author__ = "730435533"
 
-# Definition of first function which will check indeces of word
+# Definition of first function which will check indeces of our word
 
 
 def contains_char(word: str, single_character: str) -> bool:
