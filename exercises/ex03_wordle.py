@@ -1,4 +1,4 @@
-"""Structure Wordle using concepts from Lesson 12 through 14"""
+"""Structure Wordle using concepts from Lesson 12 through 14."""
 
 __author__ = "730435533"
 
