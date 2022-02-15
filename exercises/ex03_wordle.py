@@ -6,7 +6,7 @@ __author__ = "730435533"
 
 
 def contains_char(word: str, single_character: str) -> bool:
-    """Given two strings, returns True if character of second string is found anywhere in second string"""
+    """Given two strings, returns True if character of second string is found anywhere in second string."""
     assert len(single_character) == 1 
 # making sure that the length is 1 for this character
     i: int = 0
@@ -23,7 +23,7 @@ def contains_char(word: str, single_character: str) -> bool:
 
 def emojified(guess: str, secret: str) -> str: 
     # defining second function which gives emojis according to characters
-    """Assigns emoji according to Wordle game"""
+    """Assigns emoji according to Wordle game."""
     assert len(guess) == len(secret)
     color_coding: int = 0
     emoji: str = ""
@@ -52,7 +52,7 @@ def emojified(guess: str, secret: str) -> str:
 
 
 def input_guess(expected_length: int) -> str:
-    """Asks for correct number of characters"""
+    """Asks for correct number of characters."""
     numbers: int = expected_length
     characters: str = input(f"Enter a {numbers} character word: ")
     while numbers != len(characters):
@@ -64,7 +64,7 @@ def input_guess(expected_length: int) -> str:
 
 
 def main() -> None:
-    """The entrypoint of the program and main game loop"""
+    """The entrypoint of the program and main game loop."""
     turns: int = 1
     secret: str = "codes"
     # our secret word
