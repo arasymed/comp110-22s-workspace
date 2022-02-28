@@ -33,7 +33,7 @@ def stars(stars: Turtle, x_coordinate: float, y_coordinate: float) -> Turtle:
     turtle_stars = stars
     turtle_stars.speed(900)
     i: int = 0
-    side_length: int = 20
+    side_length: float = 20
     turtle_stars.pencolor(255, 255, 255)
     while (i < 30):
         turtle_stars.penup()
@@ -120,7 +120,7 @@ def alien(one_alien: Turtle, x: float, y: float) -> Turtle:
         i += 1
 # creation of abduction light
     alien.end_fill()
-    side_length: int = 30
+    side_length: float = 30
     i = 0
     alien.pencolor(0, 0, 0)
     while(i < 90):
