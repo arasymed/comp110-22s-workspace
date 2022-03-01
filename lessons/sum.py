@@ -11,8 +11,9 @@
     # return total
  
 
- def sum(xs: list[float]) -> float:
-     """Compute the sum of a list."""
-     for x in xs:
-         total += x
-        return total
+def sum(xs: list[float]) -> float:
+    """Compute the sum of a list."""
+    total: float = 0.0
+    for x in xs:
+        total += x
+    return total
