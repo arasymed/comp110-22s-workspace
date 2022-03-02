@@ -105,7 +105,23 @@ def test_sub_end_index_zero() -> None:
 
 # CONCAT TESTS
 # Usage cases:
-def tes_concat_two_lists_together() -> None:
-    integer_list_one: list[int] = [1, 2, 3, 7, 9]
-    integer_list_two: list[int] = [10, 12, 14, 16]
-    assert concat(integer_list_one, integer_list_two) == [1, 2, 3, 7, 9, 10, 12, 14, 16]
+# If we wanted to concatenate two lists with different lengths:
+def test_concat_random_numbers() -> None:
+    integer_list_one: list[int] = [4, 6, 2, 9, 15]
+    integer_list_two: list[int] = [25, 99, 76, 44, 88, 102, 146]
+    assert concat(integer_list_one, integer_list_two) == [4, 6, 2, 9, 15, 25, 99, 76, 44, 88, 102, 146]
+
+
+# If we wanted to concat two lists with consecutive numbers:
+def test_concat_consecutive_numbers() -> None:
+    integer_list_one: list[int] = [1, 2, 3, 4, 5]
+    integer_list_two: list[int] = [6, 7, 8, 9, 10]
+    assert concat(integer_list_one, integer_list_two) == [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+# Edge case:
+# If we wanted to concatenate two empty lists:
+def test_concat_empty_lists() -> None:
+    integer_list_one: list[int] = []
+    integer_list_two: list[int] = []
+    assert concat(integer_list_one, integer_list_two) == []
