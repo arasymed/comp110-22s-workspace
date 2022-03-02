@@ -67,7 +67,7 @@ def sub(list_of_integers: list[int], start_index: int, end_index: int) -> list[i
 
 
 def concat(integer_list_one: list[int], integer_list_two: list[int]) -> list[int]:
-    """Concatenates two lists, one after the other"""
+    """Concatenates two lists, one after the other."""
     # set up an empty list
     list_with_all: list[int] = []
     # append items of the first list and then items of the second list

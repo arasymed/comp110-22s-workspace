@@ -129,7 +129,7 @@ def test_sub_end_index_zero() -> None:
 # Usage cases:
 # If we wanted to concatenate two lists with different lengths:
 def test_concat_random_numbers() -> None:
-    """Tests for concatenation of two lists with different lengths"""
+    """Tests for concatenation of two lists with different lengths."""
     integer_list_one: list[int] = [4, 6, 2, 9, 15]
     integer_list_two: list[int] = [25, 99, 76, 44, 88, 102, 146]
     assert concat(integer_list_one, integer_list_two) == [4, 6, 2, 9, 15, 25, 99, 76, 44, 88, 102, 146]
