@@ -40,7 +40,7 @@ def sub(list_of_integers: list[int], start_index: int, end_index: int) -> list[i
             while i >= start_index and i <= len(list_of_integers) - 1:
                 subset_list.append(list_of_integers[i])
                 i += 1
-        return subset_list
+            return subset_list
     if start_index < 0:
         # if the start index is negative then we start appending by the first item in the list
         i = 0
@@ -50,10 +50,16 @@ def sub(list_of_integers: list[int], start_index: int, end_index: int) -> list[i
         return subset_list
         # for an edge case in which we will like in return the same list we start by index 0 and finish by last index
     if start_index == 0:
-        while i >= start_index and i < len(list_of_integers):
-            subset_list.append(list_of_integers[i])
-            i += 1
-        return subset_list
+        if end_index >= len(list_of_integers):
+            while i >= start_index and i < len(list_of_integers):
+                subset_list.append(list_of_integers[i])
+                i += 1
+            return subset_list
+        if end_index < len(list_of_integers): 
+            while i >= start_index and i < end_index:
+                subset_list.append(list_of_integers[i])
+                i += 1
+            return subset_list
     # lastly we make sure our function works for edge cases
     # if the length of the list is equal to 0, or start index is greater than length of the list or end index is negative we return en empty list
     if len(list_of_integers) == 0 or start_index > len(list_of_integers) or end_index <= 0:
