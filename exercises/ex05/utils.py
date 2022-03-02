@@ -21,6 +21,7 @@ def only_evens(integer_list: list[int]) -> list[int]:
 
 
 def sub(list_of_integers: list[int], start_index: int, end_index: int) -> list[int]:
+    """Generates a list in which a subset of the given list is retuned, not including the end index."""
     # We need to establish an empty list that we will return later
     # establish a counter variable that will keep track of the characters and their position
     subset_list: list[int] = []
@@ -60,6 +61,7 @@ def sub(list_of_integers: list[int], start_index: int, end_index: int) -> list[i
 
 
 def concat(integer_list_one: list[int], integer_list_two: list[int]) -> list[int]:
+    """Concatenates two lists, one after the other"""
     # set up an empty list
     list_with_all: list[int] = []
     # append items of the first list and then items of the second list
