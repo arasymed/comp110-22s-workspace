@@ -14,5 +14,5 @@ def only_evens(integer_list: list[int]) -> list[int]:
             even_list.pop(integer_list[i])
         else:
             even_list.append(integer_list[i])
+    i += 1
     return even_list
-
